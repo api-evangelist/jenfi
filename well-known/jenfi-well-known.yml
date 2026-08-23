@@ -1,0 +1,87 @@
+generated: '2026-08-23'
+method: probed
+source: live HTTPS probes of every Jenfi-controlled host, 2026-08-23
+note: >-
+  No /.well-known/ document was served by any Jenfi host. jenfi.com and paidfi.com are
+  fronted by a SiteGround bot-challenge interstitial that answers HTTP 202 with a 169-224
+  byte HTML meta-refresh to /.well-known/sgcaptcha/ for EVERY path, including static
+  assets and paths that do not exist — so a 202 there is neither a document nor proof of
+  absence, and is recorded as challenged. partners.jenfi.com (the b2b BNPL partner
+  console) returns a real Django 404 page on every path. No WellKnown or SecurityTxt
+  pointer is emitted, because nothing returned a 200 carrying a real document.
+hosts:
+- host: jenfi.com
+  note: SiteGround bot challenge (sg-captcha header) answers 202 on every path
+  documents:
+  - path: /.well-known/security.txt
+    status: 202
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 202
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 202
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 202
+    file: null
+  - path: /.well-known/api-catalog
+    status: 202
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 202
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 202
+    file: null
+  - path: /.well-known/agent.json
+    status: 202
+    file: null
+- host: partners.jenfi.com
+  note: b2b BNPL by Jenfi partner console (Django); real 404 page on every path
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: paidfi.com
+  note: PaidFi marketing site; same SiteGround bot challenge as jenfi.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 202
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 202
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 202
+    file: null
+  - path: /.well-known/api-catalog
+    status: 202
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 202
+    file: null
+  - path: /.well-known/agent.json
+    status: 202
+    file: null

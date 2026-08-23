@@ -1,0 +1,33 @@
+generated: '2026-08-23'
+method: searched
+source: >-
+  registry.npmjs.org search, pypi.org, rubygems.org, plus the github.com/jenfi-eng
+  organization listing (GitHub REST API), 2026-08-23
+package_count: 0
+packages: []
+registries_searched:
+- registry: npm
+  query: https://registry.npmjs.org/-/v1/search?text=jenfi
+  results: 0
+- registry: npm
+  query: https://registry.npmjs.org/-/v1/search?text=paidfi
+  results: 0
+- registry: pypi
+  query: https://pypi.org/pypi/py-moneyed-fx/json
+  status: 404
+- registry: pypi
+  query: https://pypi.org/pypi/jenfi/json
+  status: 404
+- registry: rubygems
+  query: https://rubygems.org/api/v1/gems/jenfi.json
+  status: 404
+note: >-
+  Jenfi publishes no client SDK in any public package registry, because it publishes no
+  public API for an SDK to wrap. Its engineering organization github.com/jenfi-eng
+  ("Jenfi.com Engineering", Singapore, 28 public repos) is real and active, but the
+  repositories are forks of third-party Ruby/Python/Django libraries the company runs in
+  production (money-rails, monetize, django-hordak, pytest-split, nulldb, xirr,
+  facebook-ruby-business-sdk) plus two small first-party utilities that are NOT published
+  to a registry: py-moneyed-fx ("Jenfi's FX handler for Moneyed in Django", last pushed
+  2026-03-20) and pipeline-data-app ("Provides data sources to Jenfi's pipelines",
+  2026-02-15). Neither is a Jenfi API client. No SDKs pointer is emitted.

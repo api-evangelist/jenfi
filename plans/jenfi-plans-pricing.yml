@@ -1,0 +1,32 @@
+generated: '2026-08-23'
+method: searched
+source: https://jenfi.com/ (homepage growth calculator + FAQ, snapshot 2025-11-30)
+plan_count: 0
+plans: []
+note: >-
+  Jenfi publishes no API plans, developer tiers, or usage-based pricing, because it
+  publishes no API. It does publish product pricing for its financing itself, on the
+  homepage growth calculator, and that is recorded below as pricing_disclosed rather than
+  as plans[]: these are financing terms offered to a borrower, not tiers a developer can
+  subscribe to.
+pricing_disclosed:
+  surface: homepage growth calculator
+  url: https://jenfi.com/
+  model: one-time flat fee on the advance, repaid as a percentage of monthly revenue
+  currency: USD
+  terms:
+  - target_repayment: 4 months
+    flat_fee_pct: 7.5
+  - target_repayment: 5 months
+    flat_fee_pct: 9.0
+  - target_repayment: 6 months
+    flat_fee_pct: 10.5
+  max_advance: 'Qualify for up to $500,000 USD (or equivalent in other currencies)'
+  disclaimer: >-
+    "Actual financing fees may be significantly higher or lower depending on the outcome
+    of the credit risk assessment performed by the Jenfi team." — quoted verbatim from the
+    homepage calculator.
+  captured_from: >-
+    Read from an Internet Archive snapshot of https://jenfi.com/ dated 2025-11-30, because
+    the live site answers a SiteGround bot challenge (HTTP 202) to our crawler on every
+    path. The values are Jenfi's own published figures, not an estimate.

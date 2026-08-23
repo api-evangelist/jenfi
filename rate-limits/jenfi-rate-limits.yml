@@ -1,0 +1,13 @@
+generated: '2026-08-23'
+method: searched
+source: >-
+  Full contract-discovery sweep of jenfi.com, partners.jenfi.com and paidfi.com,
+  2026-08-23 — no API reference exists to document limits
+limit_count: 0
+rate_limits: []
+headers: []
+note: >-
+  Jenfi publishes no API, therefore no rate limits, no RateLimit-*/X-RateLimit-*/Retry-After
+  response headers, and no documented exhaustion status code. An honest zero: nothing was
+  found to record, not a gap in the search. Re-check if Jenfi ever publishes the
+  "Embedded Financing" integration it markets on https://jenfi.com/partner-with-jenfi/.

@@ -1,17 +1,42 @@
 aid: jenfi
 name: Jenfi
-description: 'Jenfi is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Jenfi is a Singapore-headquartered SME credit platform for digitally-enabled businesses in
+  Southeast Asia, operating principally in Singapore and Vietnam. Founded in 2019 by Jeffrey Liu
+  and Justin Louie and backed by Y Combinator, Monk's Hill Ventures and Headline, it started with
+  revenue-based financing — non-dilutive growth capital repaid as a percentage of monthly revenue
+  rather than on a fixed schedule — and has since broadened into growth financing, working capital
+  and supply-chain financing, alongside a B2B buy-now-pay-later product marketed as PaidFi
+  ("b2b BNPL by Jenfi"). In May 2026 the company reported passing US$100 million in cumulative
+  originations across more than 2,400 financings, from over 30,000 evaluated enquiries. Jenfi
+  publishes no public developer portal, API reference, or machine-readable contract: its only
+  integration surface is a login-gated partner console at partners.jenfi.com and a contact-sales
+  "Embedded Financing" offer on its partner page.
+image: https://avatars.githubusercontent.com/u/50892604?s=200&v=4
 url: https://raw.githubusercontent.com/api-evangelist/jenfi/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: no-public-api
+x-tier-reason: >-
+  Full enrichment pass 2026-08-23 found no developer portal, no OpenAPI/GraphQL/AsyncAPI/MCP
+  surface, and no first-party SDK in any public registry. See x-coverage.
 specificationVersion: '0.20'
 created: '2026-08-23'
 modified: '2026-08-23'
 tags:
 - Company
+- Financial Services
+- Fintech
+- Lending
+- SME Finance
+- Revenue-Based Financing
+- Working Capital
+- Supply Chain Finance
+- Buy Now Pay Later
+- Embedded Finance
+- Southeast Asia
+- Singapore
+- Vietnam
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +44,70 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/jenfi-domain-security.yml
 - type: Website
-  url: https://www.hiive.com/securities/jenfi-stock
+  url: https://jenfi.com/
+- type: About
+  url: https://jenfi.com/about-us/
+- type: Blog
+  url: https://jenfi.com/blog/
+- type: BlogRSS
+  url: https://jenfi.com/feed/
+- type: Partners
+  url: https://jenfi.com/partner-with-jenfi/
+- type: SignUp
+  url: https://partners.jenfi.com/accounts/signup/
+- type: Login
+  url: https://partners.jenfi.com/accounts/login/
+- type: TermsOfService
+  url: https://jenfi.com/terms/
+- type: PrivacyPolicy
+  url: https://jenfi.com/privacy/
+- type: GitHubOrganization
+  url: https://github.com/jenfi-eng
+- type: LinkedIn
+  url: https://www.linkedin.com/company/jenfi/
+- type: X
+  url: https://x.com/jenficapital
+- type: Instagram
+  url: https://www.instagram.com/jenficapital/
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/jenfi
+- type: LLMsTxt
+  url: llms/jenfi-llms.txt
+- type: Plans
+  url: plans/jenfi-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/jenfi-rate-limits.yml
+x-enrichment:
+  date: '2026-08-23'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: >-
+    Jenfi markets "Embedded Financing — integrating our financing solutions" on
+    https://jenfi.com/partner-with-jenfi/ but publishes no developer portal, reference or
+    spec behind it: the page ends at "Speak with us to find out more" and a contact form,
+    and the only integration surface, the b2b BNPL partner console, 302s to
+    partners.jenfi.com/accounts/login/ and returns a real 404 on every spec, /.well-known/
+    and GraphQL/MCP path probed.
+  evidence:
+  - url: https://jenfi.com/partner-with-jenfi/
+    status: 202
+  - url: https://partners.jenfi.com/
+    status: 200
+  - url: https://partners.jenfi.com/openapi.json
+    status: 404
+  - url: https://partners.jenfi.com/graphql
+    status: 404
+  - url: https://partners.jenfi.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.paidfi.com/openapi.json
+    status: 404
+  - url: https://app.jenfi.com/accounts/sign_in
+    status: 0
+  checked: '2026-08-23'

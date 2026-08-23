@@ -64,5 +64,19 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Jenfi is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.hiive.com/securities/jenfi-stock
+Jenfi is a Singapore-headquartered SME credit platform for digitally-enabled businesses in Southeast Asia, operating principally in Singapore and Vietnam. Founded in 2019 by Jeffrey Liu and Justin Louie and backed by Y Combinator, Monk's Hill Ventures and Headline, it started with revenue-based financing — non-dilutive growth capital repaid as a percentage of monthly revenue rather than on a fixed schedule — and has since broadened into growth financing, working capital and supply-chain financing, alongside a B2B buy-now-pay-later product marketed as PaidFi ("b2b BNPL by Jenfi"). In May 2026 the company reported passing US$100 million in cumulative originations across more than 2,400 financings, from over 30,000 evaluated enquiries. Jenfi publishes no public developer portal, API reference, or machine-readable contract: its only integration surface is a login-gated partner console at partners.jenfi.com and a contact-sales "Embedded Financing" offer on its partner page.
+
+- [Website](https://jenfi.com/)
+- [About](https://jenfi.com/about-us/)
+- [Blog](https://jenfi.com/blog/)
+- [BlogRSS](https://jenfi.com/feed/)
+- [Partners](https://jenfi.com/partner-with-jenfi/)
+- [SignUp](https://partners.jenfi.com/accounts/signup/)
+- [Login](https://partners.jenfi.com/accounts/login/)
+- [TermsOfService](https://jenfi.com/terms/)
+- [PrivacyPolicy](https://jenfi.com/privacy/)
+- [GitHubOrganization](https://github.com/jenfi-eng)
+- [LinkedIn](https://www.linkedin.com/company/jenfi/)
+- [X](https://x.com/jenficapital)
+- [Instagram](https://www.instagram.com/jenficapital/)
+- [Crunchbase](https://www.crunchbase.com/organization/jenfi)
