@@ -12,6 +12,17 @@ description: >-
   publishes no public developer portal, API reference, or machine-readable contract: its only
   integration surface is a login-gated partner console at partners.jenfi.com and a contact-sales
   "Embedded Financing" offer on its partner page.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://avatars.githubusercontent.com/u/50892604?s=200&v=4
 url: https://raw.githubusercontent.com/api-evangelist/jenfi/refs/heads/main/apis.yml
 x-type: company
