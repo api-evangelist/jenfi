@@ -1,0 +1,21 @@
+{
+  "repo": "jenfi",
+  "feeds": [
+    {
+      "source": "https://jenfi.com/about-us/",
+      "feed_url": "https://jenfi.com/about-us/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://jenfi.com/blog/",
+      "feed_url": "https://jenfi.com/blog/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-08-30T22:33:40Z"
+}
